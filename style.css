@@ -16,9 +16,22 @@
     clear: both;
 }
 
+.mr-none{
+    margin-right: 0px!important;
+}
+
+.section-padding{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .header{
     width: 100%;
-    background: rgba(0, 0, 0, .5)
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 .logo{
@@ -52,4 +65,93 @@
 
 .menu ul li a:hover{
     color: #28b8d8;
+}
+
+.bg{
+    background-image: url('./img/kubb.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+}
+
+
+.bg .content{
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 330px;
+    padding-bottom: 250px;
+}
+
+.bg .content h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.section-top-content{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.services .service-heading{
+    text-align: center;
+}
+
+.services .service-wrapper .service-box{
+    float: left;
+    width: 28.7%;
+    text-align: center;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 16px;
+    margin-right: 30px;
+}
+
+.services .service-wrapper .service-box img{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.services .service-wrapper .service-box .content{
+    padding-bottom: 10px;
+}
+
+.instagram{
+    background: #2c2c2c;
+}
+
+.instagram .section-heading{
+    text-align: center;
+    color: #fff;
+}
+
+.instagram .images .image-item{
+    float: left;
+    width: 25%;
+}
+
+.instagram .images .image-item img{
+    width: 100%;
+}
+
+.instagram .section-bottom{
+   text-align: center;
+}
+
+.instagram .section-bottom a{
+   color: #fff;
+   text-decoration: none;
 }
