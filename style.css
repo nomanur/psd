@@ -42,7 +42,18 @@
 
 .logo h2{
     color: #fff;
+    position: relative;
 }
+
+/* .logo h2::after{
+    position: absolute;
+    content: url('./img/logo.png');
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+} */
 
 .menu{
     width: 50%;
@@ -154,4 +165,48 @@
 .instagram .section-bottom a{
    color: #fff;
    text-decoration: none;
+}
+
+#journal .section-heading{
+    text-align: center;
+}
+
+.journals .box{
+    border: 2px solid #333;
+    width: 25%;
+    padding: 10px 0;
+}
+
+.journals .box .top{
+    text-align: center;
+}
+
+.journals .box img{
+    width: 100%;
+}
+
+.journals .links{
+    margin-bottom: 20px;
+}
+
+.journals .links h2{
+    font-size: 15px;
+    float: left;
+}
+
+.journals .links p{
+    font-size: 15px;
+    float: right;
+    position: relative;
+}
+
+.journals .links p::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 10px;
+    background: red;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
 }
